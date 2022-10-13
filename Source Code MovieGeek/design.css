@@ -1,0 +1,96 @@
+img{
+   height: 50vh;
+   width: 16vw;
+   border-radius: 15px;
+   box-shadow: 2px 2px 7px black;
+   opacity: 0.8;
+}
+
+#upcoming-movie{
+  background-color: white;
+   color: lightskyblue;
+}
+
+#loader {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   z-index: 1;
+   width: 120px;
+   height: 120px;
+   margin: -76px 0 0 -76px;
+   border: 16px solid #f3f3f3;
+   border-radius: 50%;
+   border-top: 16px solid #3498db;
+   -webkit-animation: spin 2s linear infinite;
+   animation: spin 2s linear infinite;
+ }
+ 
+ @-webkit-keyframes spin {
+   0% { -webkit-transform: rotate(0deg); }
+   100% { -webkit-transform: rotate(360deg); }
+ }
+ 
+ @keyframes spin {
+   0% { transform: rotate(0deg); }
+   100% { transform: rotate(360deg); }
+ }
+ 
+
+ .animate-bottom {
+   position: relative;
+   -webkit-animation-name: animatebottom;
+   -webkit-animation-duration: 1s;
+   animation-name: animatebottom;
+   animation-duration: 1s
+ }
+ 
+ @-webkit-keyframes animatebottom {
+   from { bottom:-100px; opacity:0 } 
+   to { bottom:0px; opacity:1 }
+ }
+ 
+ @keyframes animatebottom { 
+   from{ bottom:-100px; opacity:0 } 
+   to{ bottom:0; opacity:1 }
+ }
+ 
+ #main-content {
+   display: none;
+   text-align: center;
+ }
+
+ .movie-content{
+   text-align: justify;
+   display: table-row;
+   padding: 10px;
+ }
+ .movie-content div{
+   padding-top: 10px;
+   height: 30vh;
+   display: table-cell;
+   vertical-align: middle;
+ }
+ .movie-button{
+   vertical-align: middle;
+   display: table-cell;
+   text-align: center;
+   background-size:cover;
+   background-image: url("https://cdn.dribbble.com/users/625592/screenshots/4497986/ica-dribbble.gif");
+ }
+
+ .wrapper{
+   margin-bottom: 10px;
+ }
+ footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: darkturquoise;
+  color: white;
+ }
+#footer{
+  font-family: monospace;
+}
